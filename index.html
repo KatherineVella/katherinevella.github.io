@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id = "header">
+    <h1>Paper, Rock, Scissors <img src="images/icon.png" alt="icon" height="47" width="123"></h1>
+  </div>
+
+  <div id="feedback">
+    <p> </p>
+  </div>
+
+  <div id="enter_name" class="hidden">
+    <h2>Enter your Name</h2>
+      <input type="text" id="name" style="width: 100px" />
+      <input id="submit_name" type="submit" />
+  </div>
+
+  <div id="throw_choice" class = "hidden">
+    <h2 id = "game_header">Play the Game</h2>
+    <select id ="dropdown">
+      <option value="0"> </option>
+      <option value="1">Rock</option>
+      <option value="2">Paper</option>
+      <option value="3">Scissors</option>
+    </select>
+    <button id = "throw_choice_button">Throw</button>
+  </div>
+
+  <div id="game_results" class = "hidden">
+    <img id = "player_image" src = ""></img>
+    <img id = "browser_image" src = ""></img>
+    <h2> Game Results!</h2>
+    <p id = "winner"> </p>
+    <p id = "player"> </p>
+    <p id = "browser"> </p>
+    <button id = "reset">Reset</button>
+  </div>
+
+  <button id = "show_rules_button">Rules</button>
+
+  <div id="rules" class="hidden">
+    <h2>Rules</h2>
+    <div class= "content">
+    The game of Paper, Rock, Scissors is based on trust, skill, and determination.
+    Each player must:
+    <ul>
+      <li>Make a fist with one hand.</li>
+      <li>Chant "Paper, Rock, Scissors!"</li>
+      <li> And make a move in the form of...</li>
+        <ul>
+          <li> paper (hand flat, palm down)</li>
+          <li> rock (hand in a fist)</li>
+          <li> scissors (pointer and middle fingers extended, like peace sign) </li>
+        </ul>
+    </ul>
+
+    And the winners are...
+    <ul>
+      <li> Paper covers Rock </li>
+      <li> Rock smashes Scissors </li>
+      <li> Scissors cut Paper </li>
+    </ul>
+    If the same item is thrown, it's a tie!
+    To learn more, go to the <a href = "http://worldrps.com/"> World RPS Society</a>
+    </div>
+  </div>
+
+  <button id = "show_stats_button">Stats</button>
+  <div id="stats" class="hidden">
+    <h2>Stats</h2>
+    <div class = "content">
+    <p id = "Total Games"> </p>
+    <p id = "Total Wins"> </p>
+    <p id = "Win Loss Ratio"> </p>
+    <i> Player Stats </i>
+    <p id = "player_stats"> </p>
+    <i> Browser Stats </i>
+    <p id = "browser_stats"> </p>
+    </div>
+  </div>
+
+  <footer>
+    Brought to you by Katherine Vella, a cool kid of Software Engineering.
+    Created November 8, 2018.
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
